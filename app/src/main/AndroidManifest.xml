@@ -13,10 +13,14 @@
         android:theme="@style/Theme.Assignment_Two"
         tools:targetApi="31">
         <activity
+            android:name=".CaptureImage"
+            android:exported="false" />
+        <activity
             android:name=".SecondActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.secondactivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -26,9 +30,14 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="developer.android.com" />
+
+                <data
+                    android:host="developer.android.com"
+                    android:scheme="http" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

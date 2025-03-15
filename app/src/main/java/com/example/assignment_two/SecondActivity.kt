@@ -48,5 +48,11 @@ class SecondActivity : AppCompatActivity() {
             buttonChallenger.visibility=View.VISIBLE
         }
 
+        val buttonClick = findViewById<Button>(R.id.btnViewImageAct)
+        buttonClick.setOnClickListener {
+            val intent = Intent(/* packageContext = */ this, /* cls = */ CaptureImage::class.java)
+            startActivity(intent)
+        }
+
     }
 }
