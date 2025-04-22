@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Assignment_Two"
 include(":app")
+include(":app:assign5testuiautomator_v3")

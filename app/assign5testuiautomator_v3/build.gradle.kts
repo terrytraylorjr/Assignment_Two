@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.assignment_two"
+    namespace = "com.example.assign5testuiautomator_v3"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.assignment_two"
+        applicationId = "com.example.assign5testuiautomator_v3"
         minSdk = 33
         targetSdk = 35
         versionCode = 1
@@ -33,7 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-
 }
 
 dependencies {
@@ -43,22 +42,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.support.annotations)
+    implementation(libs.junit.junit)
+    implementation(libs.androidx.uiautomator)
+    implementation(libs.androidx.junit.ktx)
+    implementation(libs.androidx.runner)
+    implementation(libs.androidx.rules)
     testImplementation(libs.junit)
-    testImplementation("org.hamcrest:hamcrest:2.2")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    //androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
-    androidTestImplementation(libs.androidx.uiautomator)
-    androidTestImplementation(libs.androidx.runner)
-    //androidTestImplementation(libs.androidx.core)
-
-
-    //Added to Support the Fragment additions
-    val fragment_version = "1.8.6"
-
-    // Java language implementation
-    //implementation("androidx.fragment:fragment:$fragment_version")
-    // Kotlin
-    implementation("androidx.fragment:fragment-ktx:$fragment_version")
 }
