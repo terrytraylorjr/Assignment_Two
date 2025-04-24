@@ -1,4 +1,5 @@
 Terry Traylor
+
 Assignment 6 Update
 Assignment completed with second activity protections.  Updated filke works with request for permissions from app iside onCreate.
 
